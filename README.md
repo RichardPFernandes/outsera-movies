@@ -19,6 +19,10 @@ Projeto desenvolvido para leitura e análise de intervalos de premiação de pro
 - Java 17 instalado
 - Maven 3.8+ instalado
 
+Ou
+
+- Docker instalado
+
 ---
 
 ## ⚙️ Como rodar o projeto
@@ -28,15 +32,35 @@ Projeto desenvolvido para leitura e análise de intervalos de premiação de pro
 ```bash
 git clone https://github.com/RichardPFernandes/outsera-movies.git
 cd movies
-``` 
+```
 
-### 2. Rodar a aplicação em modo desenvolvimento
+### 2. Rodando a aplicação
+
+### Rodando com Docker
+
+#### 2.1 Build da Imagem Docker
+
+```bash
+docker build -t movies-api .
+```
+
+#### 2.2 Rodando a aplicação
+
+```bash
+docker run -p 8080:8080 movies-api
+```
+
+---
+
+### Rodando Sem Docker
+
+#### 2.1 Rodando a aplicação
 
 ```bash
 mvn compile quarkus:dev
 ```
 
-### 3. Testar a aplicação
+#### 2.2 Testar a aplicação
 
 ```bash
 curl http://localhost:8080/movies
