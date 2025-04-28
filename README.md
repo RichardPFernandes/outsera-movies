@@ -26,7 +26,7 @@ Projeto desenvolvido para leitura e análise de intervalos de premiação de pro
 ### 1. Clonar o repositório
 
 ```bash
-git clone 
+git clone https://github.com/RichardPFernandes/outsera-movies.git
 cd movies
 ``` 
 
@@ -45,19 +45,14 @@ curl http://localhost:8080/movies
 ---
 ## ⚙️ Como rodar os testes de integração
 
-### 1. Pré-requisitos
-
-- Java 17 instalado
-- Maven 3.8+ instalado
-
-### 2. Clonar o repositório
+### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/RichardPFernandes/outsera-movies.git
 cd movies
 ``` 
 
-### 3. Rodar os testes de integração
+### 2. Rodar os testes de integração
 
 ```bash
 mvn clean verify
