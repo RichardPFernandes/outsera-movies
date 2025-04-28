@@ -43,7 +43,6 @@ public class StartupDatabaseCsv {
 
         } catch (Exception e) {
             Logger.getLogger(StartupDatabaseCsv.class.getName()).log(java.util.logging.Level.SEVERE, e.getMessage(), e);
-            e.printStackTrace();
         }
     }
 }
