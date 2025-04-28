@@ -33,7 +33,7 @@ Ou
 git clone https://github.com/RichardPFernandes/outsera-movies.git
 cd movies
 ```
-
+---
 ### 2. Rodando a aplicação
 
 ### Rodando com Docker
@@ -50,7 +50,6 @@ docker build -t movies-api .
 docker run -p 8080:8080 movies-api
 ```
 
----
 
 ### Rodando Sem Docker
 
@@ -60,7 +59,9 @@ docker run -p 8080:8080 movies-api
 mvn compile quarkus:dev
 ```
 
-#### 2.2 Testar a aplicação
+---
+
+### 3. Testar a aplicação
 
 ```bash
 curl http://localhost:8080/movies
